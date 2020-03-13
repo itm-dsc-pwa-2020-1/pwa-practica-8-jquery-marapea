@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.4.1.min.js"></script>
+    <title>Practica 8-Ejemplos JQuery</title>
+    <meta name="author" content="Mara Paola Ezequiel Alvarado" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Rock+Salt|Sen&display=swap" rel="stylesheet">
+    <!-- El Meta Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- El archivo CSS de Material Design -->
+    <link rel="stylesheet" href="mdl/material.min.css">
+    <!-- El archivo JS de Material Design -->
+    <script src="mdl/material.min.js"></script>
+    <!-- Un tipo de Fuente desde Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script language="JavaScript" type="text/javascript" src="ajax.js"></script>
+</head>
+</head>
+<body>
+    <div class="contenedor">
+    <div class="caja1">
+        Ejemplos de JQuery
+    </div>
+    <div class="caja2">
+        <button id="demo-menu-lower-left"
+        class="mdl-button mdl-js-button mdl-button--icon">
+  <i class="material-icons">more_vert</i>
+</button>
+     <div><ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+        for="demo-menu-lower-left">
+        <li class="mdl-menu__item mdl-menu__item--full-bleed-divider" id="mostrar1">Mostrar foto 1</li>
+        <li class="mdl-menu__item mdl-menu__item--full-bleed-divider" id="ocultar1">Ocultar foto 1</li>
+        <li class="mdl-menu__item mdl-menu__item--full-bleed-divider" id="mostrar2">Mostrar foto 2</li>
+        <li class="mdl-menu__item mdl-menu__item--full-bleed-divider" id="ocultar2">Ocultar foto 2</li>
+        <li class="mdl-menu__item mdl-menu__item--full-bleed-divider" id="mostrar3">Mostrar foto 3</li>
+        <li class="mdl-menu__item" id="ocultar3">Ocultar foto 3</li></div>
+    
+    <div id="menu"> 
+        <div id="foto1"><img src="img/vertiche-ropa-semana-santa.jpg" alt="semana-santa" id="semana-santa"></div>
+        <div id="foto2"><img src="img/vertiche-mujer.jpg" alt="mujer" id="mujer"></div>
+        <div id="foto3"><img src="img/vertiche--juvenil.jpg" alt="juvenil" id="juvenil"></div>
+    </div>
+</ul>   
+    </div>
+    <div class="caja3">
+        <p>Silder</p> 
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="empe">
+            Empezar
+        </button>
+        <div id="slider">
+            <div id="uno"><img src="img/vertiche-ropa-semana-santa.jpg" alt="semana-santa" id="semana-santa"></div>
+            <div id="dos"><img src="img/vertiche-mujer.jpg" alt="mujer" id="mujer"></div>
+            <div id="dos"><img src="img/vertiche--juvenil.jpg" alt="juvenil" id="juvenil"></div>
+        </div>
+    </div>
+    <div class="caja4">
+        <p>Cargar contenido externo</p> 
+        
+        <button id="carga1">Carga foto 1</button>
+        <button id="carga2">Carga foto 2</button>
+        <button id="carga3">Carga foto 3</button>
+        <div class="conte1">
+        </div>
+        <div class="conte2">
+        </div>
+        <div class="conte3">
+        </div>
+    </div>
+    <div class="caja5">
+        <p>AJAX</p>
+        <p>Libros</p>
+        <form name="consulta" action="" onsubmit="MostrarConsulta('consulta.php'); return false">
+            <label>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="ajaxconsultar">
+                Consultar
+            </button> <br>
+            </label>
+            </form>
+            
+            <div id="resultado"></div></body>
+            
+              
+    </div>
+    <div class="caja6">
+        <p>Efectos de transicion</p>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="e">
+            Empezar
+        </button> <br>
+        <img src="img/vertiche-ropa-semana-santa.jpg" alt="semana-santa" id="s-s">
+        <img src="img/vertiche-mujer.jpg" alt="mujer" id="m">
+        <img src="img/vertiche--juvenil.jpg" alt="juvenil" id="j">
+    </div>
+    <div class="caja7">
+        <p>Otro</p>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="mostrar">
+            Mostrar
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="ocultar">
+            Ocultar
+        </button>
+        <div id="otro">
+            <img src="img/vertiche-ropa-semana-santa.jpg" alt="semana-santa" id="semana-santa">
+            <img src="img/vertiche-mujer.jpg" alt="mujer" id="mujer">
+            <img src="img/vertiche--juvenil.jpg" alt="juvenil" id="juvenil">
+        </div>
+        
+    </div>
+    <div class="caja8">
+        <p id="nombre">Mara Paola Ezequiel Alvarado</p>
+    </div>
+</div>
+</body>
+</html>
